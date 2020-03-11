@@ -8,6 +8,6 @@ class Protop < Formula
   bottle :unneeded
 
   def install
-    bin.install "protop"
+    bin.install_symlink "bin/protop" => "protop"
   end
 end
