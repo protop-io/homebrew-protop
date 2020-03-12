@@ -11,7 +11,7 @@ class Protop < Formula
     rm_f Dir["*.bat"]
     chmod 0755, "bin/protop-cli"
     libexec.install Dir["*"]
-    bin.write_jar_script libexec/"bin/protop-cli*.jar" => "protop"
+    bin.write_jar_script libexec/"bin/protop-cli*.jar", "protop"
     # bin.install_symlink libexec/"bin/protop-cli" => "protop"
   end
 
