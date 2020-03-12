@@ -1,9 +1,9 @@
 class Protop < Formula
   desc "A command line tool for distributing protobufs."
   homepage "https://github.com/protop-io/protop"
-  url "https://github.com/protop-io/protop/releases/download/v0.1-beta.1/Distribution.tar.gz"
-  sha256 "38a2ecf937e27518433f26f17d7581bb82d7ae559f1743c00d93dd8f76d478ef"
-  version "0.1.0"
+  url "https://github.com/protop-io/protop/releases/download/v0.2.0/protop-cli-0.2.0.tar.gz"
+  sha256 "fbf3ab8bb8cb991f52bfd1be166f86c04cb3d0fae9380176ae03f3c1c2609ebc"
+  version "0.2.0"
 
   bottle :unneeded
 
