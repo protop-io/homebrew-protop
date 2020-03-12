@@ -8,6 +8,19 @@ class Protop < Formula
   bottle :unneeded
 
   def install
-    bin.install_symlink "../protop" => "bin/protop-cli"
+    rm_f Dir["*.bat"]
+    chmod 0755, "protop-cli"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"protop-cli"
+  end
+
+  def caveats; <<~EOS
+    You should set the environment variable PROTOP_HOME to
+      #{libexec}
+    EOS
+  end
+
+  test do
+    system "#{bin}/protop", "--version"
   end
 end
