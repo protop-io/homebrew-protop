@@ -9,7 +9,7 @@ class Protop < Formula
 
   def install
     rm_f Dir["*.bat"]
-    chmod 0755, "protop-cli"
+    chmod 0755, "bin/protop-cli"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/protop-cli"
   end
