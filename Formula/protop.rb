@@ -7,6 +7,8 @@ class Protop < Formula
 
   bottle :unneeded
 
+  depends_on :java => "13+"
+
   def install
     # rm_f Dir["*.bat"]
     libexec.install Dir["*"]
