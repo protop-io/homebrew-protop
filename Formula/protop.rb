@@ -12,7 +12,7 @@ class Protop < Formula
   def install
     # rm_f Dir["*.bat"]
     libexec.install Dir["*"]
-    bin.write_jar_script libexec/"bin/protop-cli.jar", "protop"
+    bin.write_jar_script libexec/"protop-cli.jar", "protop"
     # bin.install_symlink libexec/"bin/protop-cli" => "protop"
   end
 
