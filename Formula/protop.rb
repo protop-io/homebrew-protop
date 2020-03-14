@@ -1,9 +1,9 @@
 class Protop < Formula
   desc "A command line tool for distributing protobufs."
   homepage "https://github.com/protop-io/protop"
-  url "https://github.com/protop-io/protop/releases/download/0.3.0/protop-v0.3.0.tgz"
-  sha256 "ca7ce38044c3f3246cf7ec46066411f7d2649f742d41a812063526c1afb8e780"
-  version "0.3.0"
+  url "https://github.com/protop-io/protop/releases/download/0.4.0/protop-0.4.0.tgz"
+  sha256 "88ab9d35ef91b0e070a38695e70ba2319553abb63265f712c0aeb21513a54f8e"
+  version "0.4.0"
 
   bottle :unneeded
 
@@ -12,7 +12,7 @@ class Protop < Formula
   def install
     # rm_f Dir["*.bat"]
     libexec.install Dir["*"]
-    bin.write_jar_script libexec/"protop-cli.jar", "protop"
+    bin.write_jar_script libexec/"protop.jar", "protop"
     # bin.install_symlink libexec/"bin/protop-cli" => "protop"
   end
 
