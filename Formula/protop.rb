@@ -3,7 +3,7 @@ class Protop < Formula
   homepage "https://github.com/protop-io/protop"
   url "https://github.com/protop-io/protop/releases/download/0.4.6/protop-0.4.6.tgz"
   sha256 "422e8c11829390d0e13d5b48e578da3ab5504dfe9bc5d4457b547cddf022a960"
-  version "06"
+  version "0.4.6"
 
   bottle :unneeded
 
