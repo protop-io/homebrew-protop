@@ -1,9 +1,9 @@
 class Protop < Formula
   desc "A package manager for protocol buffers."
   homepage "https://github.com/protop-io/protop"
-  url "https://github.com/protop-io/protop/releases/download/v0.8.0/protop-0.8.0.tgz"
-  sha256 "6291d096a488fb2de08319baad97b2e0b45119570863a740333aad0c256ab604"
-  version "0.8.0"
+  url "https://github.com/protop-io/protop/releases/download/v0.9.0/protop-0.9.0.tgz"
+  sha256 "b1cc60997c0a340b8dff75128616b1b732cec4e9761df67cfe7c640a41bf0b82"
+  version "0.9.0"
 
   bottle :unneeded
 
