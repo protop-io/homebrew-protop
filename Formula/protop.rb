@@ -7,7 +7,7 @@ class Protop < Formula
 
   bottle :unneeded
 
-  depends_on :java => "13+"
+  depends_on "openjdk" => "13+"
 
   def install
     # rm_f Dir["*.bat"]
