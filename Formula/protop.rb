@@ -23,7 +23,6 @@ class Protop < Formula
   end
 
   test do
-    system "which", "protop"
-    # system "#{bin}/protop", "--version"
+    system "#{bin}/protop", "-v"
   end
 end
