@@ -16,14 +16,14 @@ class Protop < Formula
     # bin.install_symlink libexec/"bin/protop-cli" => "protop"
   end
 
-  # def caveats; <<~EOS
-  #   You should set the environment variable PROTOP_HOME to
-  #     #{libexec}
-  #   EOS
-  # end
+  def caveats; <<~EOS
+    You should set the environment variable PROTOP_HOME to
+      #{libexec}
+    EOS
+  end
 
   test do
     system "which", "protop"
-    system "#{bin}/protop", "--version"
+    # system "#{bin}/protop", "--version"
   end
 end
